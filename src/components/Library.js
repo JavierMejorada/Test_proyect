@@ -9,7 +9,7 @@ const Library = ({ library, onRemove }) => {
         ) : (
           <ul>
             {library.map((song, index) => (
-              <li key={index} data-testid="library-item"> {/* Agrega data-testid aquí */}
+              <li key={index} data-testid="library-item"> {}
                 {song.title} - {song.artist} ({song.album})
                 <button onClick={() => onRemove(song)}>Eliminar</button>
               </li>
