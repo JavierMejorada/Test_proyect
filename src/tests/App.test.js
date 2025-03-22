@@ -23,6 +23,6 @@ test('Simula agregar una canción a la biblioteca', async () => {
   const addButton = addButtons[0]; // Selecciona el primer botón
   fireEvent.click(addButton);
 
-  // Verifica que "Nueva Canción" esté en la biblioteca usando data-testid
+  
   expect(await screen.findByTestId('library-item')).toBeInTheDocument();
 });
